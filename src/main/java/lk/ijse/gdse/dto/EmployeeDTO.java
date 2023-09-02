@@ -12,5 +12,5 @@ public class EmployeeDTO {
     private String EmpName;
     private String EmpEmail;
     private String EmpDep;
-    private byte[] EmpProfile;
+    private String EmpProfile;
 }
