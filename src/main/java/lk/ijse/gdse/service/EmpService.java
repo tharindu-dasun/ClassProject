@@ -5,6 +5,6 @@ import lk.ijse.gdse.dto.EmployeeDTO;
 public interface EmpService {
     EmployeeDTO saveEmployee (EmployeeDTO employeeDTO);
     void deleteEmployee (String empId);
-    void updateEmployee (EmployeeDTO employeeDTO);
+    void updateEmployee ( String id ,EmployeeDTO employeeDTO);
     EmployeeDTO getEmpById(String empId);
 }

@@ -29,7 +29,7 @@ public class EmployeeController {
             tmpEmp.setEmpEmail(empEmail);
             tmpEmp.setEmpDep(empDep);
             tmpEmp.setEmpProfile(empProfileStr);
-            return empService;
+            return empService.saveEmployee(tmpEmp);
     }
 
 //        System.out.println(employeeDTO);
@@ -41,10 +41,9 @@ public class EmployeeController {
     }
     @PutMapping
     void updateEmployee(
-            @PathVariable String id ,
+            @PathVariable String id,
             @RequestBody EmployeeDTO employeeDTO){
-        System.out.println(id);
-        System.out.println(employeeDTO);
+        empService.updateEmployee(id,employeeDTO);
     }
     @GetMapping
     List<EmployeeDTO> getSelectedEmp(String empId){
