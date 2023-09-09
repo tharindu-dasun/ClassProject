@@ -13,4 +13,12 @@ public class EmployeeDTO {
     private String EmpEmail;
     private String EmpDep;
     private String EmpProfile;
+
+    public EmployeeDTO(String empId, String empName, String empEmail, String empDep, String empProfile) {
+        EmpId = empId;
+        EmpName = empName;
+        EmpEmail = empEmail;
+        EmpDep = empDep;
+        EmpProfile = empProfile;
+    }
 }
